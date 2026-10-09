@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "jangar.llm-journey",
+  "name": "LLM Journey",
+  "version": "0.1.0",
+  "author": "jangar",
+  "description": "Daily LLM learning streak + due flashcards. Left: today's log, right: review, middle: recall.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "Widget.qml" },
+  "barWidget": {
+    "displayName": "LLM Journey",
+    "description": "Learning streak and due SRS cards",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}

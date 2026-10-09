@@ -1,0 +1,7 @@
+  // --- llm-journey (inserted by ~/Projects/llm-journey/omarchy/install.sh) ---
+  "learn": {"icon":"󰧑","label":"Learn","description":"LLM learning journal"},
+  "learn.today": {"icon":"󰃭","label":"Today's log","action":"omarchy-launch-floating-terminal-with-presentation lj today"},
+  "learn.recall": {"icon":"󰑓","label":"Recall yesterday","action":"omarchy-launch-floating-terminal-with-presentation lj recall"},
+  "learn.review": {"icon":"󰘸","label":"Review cards","action":"omarchy-launch-floating-terminal-with-presentation lj review"},
+  "learn.paper": {"icon":"󰈙","label":"Papers","action":"omarchy-launch-editor ~/Projects/llm-journey/papers"},
+  "learn.repo": {"icon":"","label":"Open repo","action":"omarchy-launch-editor ~/Projects/llm-journey"},

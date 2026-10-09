@@ -1,0 +1,8 @@
+anki/*.tsv
+__pycache__/
+.venv/
+*.pt
+*.safetensors
+*.bin
+wandb/
+.DS_Store
