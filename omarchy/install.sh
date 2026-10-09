@@ -16,6 +16,8 @@ echo "✓ plugin → ~/.config/omarchy/plugins/$PLUGIN_ID"
 
 if command -v omarchy-shell >/dev/null; then
   omarchy-shell shell rescanPlugins >/dev/null 2>&1 || true
+  # The rescan is async; wait until the shell knows the plugin.
+  for _ in {1..20}; do omarchy plugin list 2>/dev/null | grep -q "$PLUGIN_ID" && break; sleep 0.25; done
   omarchy plugin enable "$PLUGIN_ID" && echo "✓ bar widget enabled (move it: omarchy bar move $PLUGIN_ID --section left)"
 fi
 
